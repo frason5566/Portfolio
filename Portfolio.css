@@ -2,11 +2,12 @@
 :root{
     --theme-1: #20aacc;
     --theme-2: #2044aa;
-    --theme-3: #401010;
+    --theme-3: #151530;
     --theme-4: #505060;
+    --theme-5:#998050;
     --text-1: #402020;
     --text-2: #707070;
-    --text-3: #dddddd;
+    --text-3: #eeeeee;
     --text-4: #cc5050;
     --back: #eeeeee;
 }
@@ -20,6 +21,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth; 
+    color: var(--text-3);
 }
 
 /* 1200px / 16px = 75em */
@@ -128,33 +130,55 @@ nav > ul{
 #welcome-section p{
     color: var(--text-2);
 }
-/* projects */
-#projects{
+/* certification */
+#certification{
     background-color: var(--theme-3);
     text-align: center;
-    /* height: ; */
+    /* height: 94vh; */
+    color: var(--text-3);;
+    padding: 1vh 0 3vh 0;
 }
+.title{
+    scroll-margin-top: 5px;
+}
+
+.project-tile{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 10px 0 10px;
+    /* color: var(--text-3); */
+}
+
 .certi-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    max-width: 1280px;
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    max-width: 1920px;
+    grid-gap: 1rem;
     width: 90%;
     margin: 0 auto ;
 }
+#card{
+    padding: 2px;
+}
 
-/* profile */
-#profile{
-    background-color: var(--theme-2);
-    
-    height: 33vh;
+/* project */
+#project{
+    background-color: var(--theme-5);
+    text-align: center;
+    color: var(--text-3);
+    /* height: 94vh; */
+    padding: 1vh 0 3vh 0;
+}
+#project > .container > p{
+    color: var(--text-2);
 }
 
 /* footer */
 footer{
-    height: 10vh;
-    background-color: var(--theme-4);
+    height: 6vh;
+    background-color: var(--theme-2);
+    color: var(--text-1);
 }
-@media (max-width: 500px){
-
+footer > div > ul{
+    display: flex;
+    list-style: none;
 }

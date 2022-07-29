@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="PJ1-SurveyForm.css" />
+    </head>
+    <body>
+        <h1 id="title">Registration Form</h1>
+        <p id="description">Please fill out this form with the required information </p>
+        <form id="survey-form" action="https://register-demo.freecodecamp.org">
+            <fieldset>
+                <label id="name-label">Name <input type="text" id="name" placeholder="Tom" required/></label>
+                <label id="email-label">Email <input type="email" id="email" placeholder="Tom@freecodecamp.org" required/></label>
+                <label id="number-label">Age(optional) <input type="number" id="number" min="13" max="120" placeholder="29" /></label>
+                <label>Which option best describes you? 
+                    <select id="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="1">HR</option>
+                        <option value="2">Friend</option>
+                        <option value="3">Someone on the Internet</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Why are you here?</label>
+                <label><input type="radio" name="account-type" class="dropdown" value="1"/> Just hanging around </label>
+                <label><input type="radio" name="account-type" class="inline" value="2" /> Want to know about Frason </label>
+                <label>What do you interest in?(optional) </label>
+                <label><input type="checkbox" name="interest" value="1">Python </label>
+                <label><input type="checkbox" name="interest" value="2">Mechanism </label>
+                <label><input type="checkbox" name="interest" value="3">Machine Learning </label>
+                <label><input type="checkbox" name="interest" value="4">Robotics </label>
+            </fieldset>
+            <fieldset>
+                <label>What do you want to say to Frason?</label>
+                <textarea rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea>
+            </fieldset>
+            
+            <input type="submit" id="submit">
+        </form> 
+
+    </body>
+</html>
