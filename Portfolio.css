@@ -164,7 +164,7 @@ img {
 /* footer */
 footer{
     height: 6vh;
-    background-color: var(--theme-2);
+    background-color: var(--theme-4);
     color: var(--text-1);
 }
 footer > div > ul{
