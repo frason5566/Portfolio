@@ -5,11 +5,12 @@
     --theme-3: #151530;
     --theme-4: #505060;
     --theme-5:#998050;
+    --theme-6:#60A0D0;
     --text-1: #402020;
-    --text-2: #707070;
+    --text-2: #404040;
     --text-3: #eeeeee;
     --text-4: #cc5050;
-    --back: #eeeeee;
+    --back: #d0d0d0;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -78,7 +79,7 @@ img {
     width: 100%;
     /* height: 60px; */
     min-height: 60px;
-    background-color: var(--theme-4);
+    background-color: var(--theme-6);
     box-shadow: 0 1.5px rgb(0, 0, 0);
     z-index: 1;
 }
@@ -93,13 +94,13 @@ img {
 
 /* welcome */
 #welcome-section{
-    background-color: var(--text-2);
+    background-color: var(--back);
     height: 99vh;
     margin-top: 60px;
     flex-direction: column;
     display: flex;
     font-family: sans-serif;
-    color: var(--text-3);
+    color: var(--text-2);
 }
 #personal{
     list-style: square;
@@ -110,7 +111,7 @@ img {
     text-align: left;
 }
 #welcome-section h1{
-    color: var(--text-3);
+    color: var(--text-2);
 }
 #welcome-section h2{
     color: var(--text-4);
@@ -119,6 +120,7 @@ img {
 #welcome-section p{
     color: var(--text-1);
 }
+
 /* certification */
 #certification{
     background-color: var(--theme-3);
@@ -164,7 +166,7 @@ img {
 /* footer */
 footer{
     height: 6vh;
-    background-color: var(--theme-4);
+    background-color: var(--theme-6);
     color: var(--text-1);
 }
 footer > div > ul{
